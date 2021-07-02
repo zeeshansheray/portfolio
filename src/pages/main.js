@@ -32,12 +32,14 @@ export default function main() {
                                     .pauseFor(3000)
                                     .deleteAll()
                                     .typeString('a journey')
+                                    .pauseFor(3000)
                                     .deleteAll()
                                     .start() ;        
                             }}  
                             options={{
                                 autoStart: true,
                                 loop: true,
+                                delay: 200,
                             }}
 
                         />
