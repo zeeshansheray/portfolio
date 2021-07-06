@@ -3,6 +3,8 @@ import React, {useState, useEffect} from 'react'
 
 import TypeWriter from 'typewriter-effect';
 
+
+import Lottie from 'lottie-web';
 import AnimatedCursor from "react-animated-cursor"
 
 import SvgIcons from '../icons/SvgIcons';
@@ -14,6 +16,21 @@ const Main = () => {
     const handleDarkModeFunc = () => {
         setDarkMode(!darkMode);
     }
+
+    const lottieRef = React.useRef(null);
+
+    useEffect(()=>{
+        Lottie.loadAnimation({
+            container: lottieRef.current, 
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            animationData: require('../icons/lottie.json'),
+            
+        })
+        
+
+    },[])
 
     return (
         <div id="main" className={darkMode ? 'darkTheme' : 'lightTheme' }>
@@ -57,6 +74,11 @@ const Main = () => {
                             delay: 150,
                         }}
                     />
+            </div>
+            <div className="row lottieBox">
+                <div className="lottie" ref={lottieRef}>
+
+                </div>
             </div>
         </div>
     )
