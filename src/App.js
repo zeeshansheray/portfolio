@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-
+import AnimatedCursor from "react-animated-cursor"
 import Main from './pages/main';
 
 
@@ -26,9 +26,17 @@ function App() {
         </div>
 
         :
-
-        <Main/>
-    
+        <>
+        <AnimatedCursor
+          innerSize={8}
+          outerSize={20}
+          color='32, 190, 234'
+          outerAlpha={0.2}
+          innerScale={0.7}
+          outerScale={5}
+        />
+          <Main/>
+        </>
         }
         </div>
   );
