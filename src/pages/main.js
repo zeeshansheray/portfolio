@@ -15,6 +15,7 @@ const Main = () => {
 
     const handleDarkModeFunc = () => {
         setDarkMode(!darkMode);
+        console.log('Hello')
     }
 
     const lottieRef = React.useRef(null);
@@ -42,7 +43,7 @@ const Main = () => {
                 innerScale={0.7}
                 outerScale={5}
             />
-            <div className="row toggleRow justify-content-flex-end">
+            <div className="row toggleRow">
                 <div className={`toggleSwitch ${darkMode ? 'darkMode' : 'lightMode'}`} onClick={handleDarkModeFunc} >
                     <div className="selectCircle">  
                     </div>
@@ -54,10 +55,13 @@ const Main = () => {
                         }
                     </span>
                 </div>
+                <div className="detail">
+                        Zeeshan Ali
+                </div>       
             </div>
             <div className="introText">
                     <div className="leftText">
-                        I'm a
+                        Who am I<div class="questionMark" style={{color :'red'}}>?</div> 
                     </div>
                     <TypeWriter 
                         onInit={(typewriter)=>{typewriter.typeString('Web Developer.').callFunction(()=>{})
@@ -74,11 +78,11 @@ const Main = () => {
                             delay: 150,
                         }}
                     />
-            </div>
-            <div className="row lottieBox">
+            <div className=" lottieBox">
                 <div className="lottie" ref={lottieRef}>
 
                 </div>
+            </div>
             </div>
         </div>
     )
