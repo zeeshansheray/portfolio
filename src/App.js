@@ -1,21 +1,33 @@
 import React, {useEffect} from 'react';
-
-import Main from './pages/main';
-
-
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import BlankScreen from './components/BlankScreen';
+import Homepage from './components/Homepage';
+
 import HashLoader from "react-spinners/HashLoader";
+import Fade from 'react-reveal/Fade';
+
+import './assets/css/global.scss';
 
 function App() {
 
-  const [loading, setLoading] = React.useState(false);
+  const [loading, setLoading] = React.useState(true);
+  const [showHome, setShowHome] = React.useState(false);
 
   useEffect(() => {
-    setLoading(true);
     setTimeout(()=>{
       setLoading(false);
     }, 3000)
   }, [])
+
+  useEffect(()=>{
+    if(!showHome){
+      setTimeout(()=>{
+        setShowHome(true);
+      },5000)
+    }
+  },[setLoading])
+
 
   return (
     <div id="app">{
@@ -26,7 +38,17 @@ function App() {
         </div>
 
         :
-          <Main/>
+          <>
+            <Fade top timeout={2000}>
+                <BlankScreen className={showHome ? 'display-none' : ''}/>
+            </Fade>
+            {showHome && 
+            <>
+            <Homepage className={showHome ? 'display-none' : ''}/>
+             <div className="demo" style={{height:'100%', width:'100%', backgroundColor:'yellow '}}>
+             </div>
+             </>}
+          </>
         }
         </div>
   );

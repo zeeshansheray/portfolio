@@ -1,10 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
+#Blankscreen{
+    background-color: #20BEEA;
+    width: 100vw;
+    height: 100vh;
+
+    .Title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+        width: inherit;
+        font-family: 'Bree Serif', serif;
+        font-size: 6rem;
+        font-weight: 700;
+    }
+
+    .red-text{
+        color: red;
+    }
+    
+    .name{
+        color: white;
+    }
+}
+
+
 #main{
     font-family: 'Bree Serif', serif;
     padding: 16px;
     height: inherit;
     width: inherit;
+    position: relative;
 
     .Typewriter{
         color: #20BEEA;
@@ -34,7 +62,6 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-       
     }
 
     .selectCircle{
@@ -57,7 +84,6 @@
     
     .questionMark{
         margin-left: 16px;
-        animation: rotate 4s infinite;
         font-size: 50px;
     }
 
@@ -75,20 +101,6 @@
 
         100%{
             transform: rotate(45deg);
-        }
-    }
-
-    @keyframes rotate {
-        0%{
-            transform: rotate(60deg);
-        }
-
-        50%{
-            transform: rotate(-60deg);
-        }
-
-        100%{
-            transform: rotate(60deg);
         }
     }
 
@@ -140,6 +152,22 @@
         right: 10%;
     }
 
+    .arrowLottieBoxUp{
+        width: 100px;
+        height: 100px;
+        position: fixed;
+        right: 0%;
+        bottom: 0%;
+    }
+
+    .arrowLottieBoxDown{
+        width: 100px;
+        height: 100px;
+        position: fixed;
+        right: 6%;
+        bottom: 0%;
+        transform: rotate(180deg);
+    }
 
 }
 
@@ -157,38 +185,3 @@
 
 
 
-
-//     ///main classes
-    .cp{
-        cursor: pointer;
-    }
-
-    .space-between{
-        justify-content: space-between;
-    }
-
-    .justify-content-flex-end{
-        justify-content: flex-end;
-    }
-
-    .demo{
-        height: 300px;
-    }
-
-    .space-between{
-        justify-content: space-between;
-    }
-
-    .center-flex{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .center-absolute{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    }
