@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import BlankScreen from './components/BlankScreen';
 import Homepage from './components/Homepage';
+import About from './components/About';
 
 import HashLoader from "react-spinners/HashLoader";
 import Fade from 'react-reveal/Fade';
@@ -34,7 +35,7 @@ function App() {
         loading ?  
 
         <div id="loader">
-           <HashLoader color={"#4A90E2"} loading={loading}  size={150} />
+           <HashLoader color={"#ffffff"} loading={loading}  size={150} />
         </div>
 
         :
@@ -43,11 +44,11 @@ function App() {
                 <BlankScreen className={showHome ? 'display-none' : ''}/>
             </Fade>
             {showHome && 
-            <>
+            <div className="outerContainer">
             <Homepage className={showHome ? 'display-none' : ''}/>
-             <div className="demo" style={{height:'100%', width:'100%', backgroundColor:'yellow '}}>
+            <About/>
              </div>
-             </>}
+             }
           </>
         }
         </div>

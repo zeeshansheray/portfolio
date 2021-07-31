@@ -9,7 +9,7 @@ import AnimatedCursor from "react-animated-cursor"
 
 import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
-
+import Slide from 'react-reveal/Slide';
 
 import SvgIcons from '../icons/SvgIcons';
 
@@ -83,52 +83,69 @@ const Homepage = ({className}) => {
                         </span>
                     </div>
                </Fade>
-                {/* <div className="detail">
-                        Zeeshan Ali
-                </div>        */}
             </div>
+            <Fade left>
             <div className="introText">
-                <Fade left>
-                    <div className="leftText">
-                            Who am I<div class="questionMark">?</div> 
+                <div className="greetText">
+                    Hi, my name is
+                </div>
+                        <div className="leftText">
+                            Zeeshan Ali. 
                         </div>
-                        <TypeWriter 
-                            onInit={(typewriter)=>{typewriter.typeString('Web Developer.').callFunction(()=>{})
-                                .pauseFor(3000)
-                                .deleteAll()
-                                .typeString('Freelancer.')
-                                .pauseFor(3000)
-                                .deleteAll()
-                                .start() ;        
-                            }}  
-                            options={{
-                                autoStart: true,
-                                loop: true,
-                                delay: 150,
-                            }}
-                        />
-                </Fade>
-                <Flip top>
-                    <div className="lottieBox">
-                        <div className="lottie" ref={lottieRef}>
-
+                        <div className="d-flex">
+                            <span className="Typewriter">I 'm a&nbsp;</span>
+                            <TypeWriter 
+                                onInit={(typewriter)=>{typewriter.typeString('Software Engineer.').callFunction(()=>{})
+                                    .pauseFor(3000)
+                                    .deleteAll()
+                                    .typeString('Freelancer.')
+                                    .pauseFor(3000)
+                                    .deleteAll()
+                                    .start() ;        
+                                }}  
+                                options={{
+                                    autoStart: true,
+                                    loop: true,
+                                    delay: 150,
+                                }}
+                            />
+                        </div>
+            </div>
+            <div className="descriptionText">
+                I am an ardent software engineer having extensive React JS experience with an eager to learn and master new technologies.
+                <br/>
+                Currently working at this role for <a className="currentComapnyName" target="_blank" href="http://www.isystematic.com.pk/">Isystematic LLC.</a>
+            </div>
+            <div className="resumeDownloadBox">
+                    <a className="downloadResumeBtn" href="/pdf/ZeeshanResume.pdf" download>Download Resume</a>
+            </div>
+            </Fade>
+            <Slide bottom>
+                    <div className="socialIconsLeft">
+                        <span className="singleIcon">
+                            <SvgIcons.FacebookIcon/>
+                        </span>
+                        <span className="singleIcon">
+                            <SvgIcons.InstagramIcon/>
+                        </span>
+                        <span className="singleIcon">
+                            <SvgIcons.LinkedInIcon/>
+                        </span>
+                        <span className="singleIcon">
+                            <SvgIcons.GitHubIcon/>
+                        </span>
+                        <div className="bar">
+                        </div>
                     </div>
-                </div>
-            </Flip>
-            </div>
-            <div className="arrowLottieBoxUp" id="arrowLottie">
-                <div className="arrowLottieUp" ref={arrowLottieUpRef}>
-                </div>
-            </div>
-            <div className="arrowLottieBoxDown" id="arrowLottie">
-                <div className="arrowLottieUp" ref={arrowLottieDownRef}>
-                </div>
-            </div>
+                    <div className="emailRightSection">
+                        <span className="email">
+                            zeeshansheray1@gmail.com
+                        </span>
+                        <div className="bar"></div>
+                    </div>
+                </Slide>
         </div>
     )
 }
 
 export default Homepage;
-
-
-{/* <SvgIcons.Blacky height="inherit" width="inherit" color={darkMode ? '#757575' : '#000000'}/> */}

@@ -1,7 +1,26 @@
 @import './main';
-
+@import './about.scss';
 
 //global Classes main classes
+
+#app{
+    background-color: #0A192F;
+}
+
+.outerContainer{
+    padding: 0px 12%;
+}
+
+.topHeading{
+    color: #ccd6f6;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    padding-top: 16px;
+    
+}
+
+
 .cp{
     cursor: pointer;
 }
@@ -22,7 +41,7 @@
     justify-content: space-between;
 }
 
-.center-flex{
+.middle{
     display: flex;
     justify-content: center;
     flex-direction: column;
