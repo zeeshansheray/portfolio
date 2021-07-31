@@ -24,7 +24,7 @@ export default function BlankScreen({className}) {
             <div className="Title">
                         {/* Hello    <span className="name">I'm <span className="red-text">Zeeshan</span></span> */}
                 <div className="name">
-                    {`${'< HELLO />'}`}
+                    {`${'< Hello />'}`}
                 </div>
             </div>
         </div>
