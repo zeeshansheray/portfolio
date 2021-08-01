@@ -1,5 +1,5 @@
 import React from 'react'
-import SvgIcons from '../icons/SvgIcons'
+
 
 export default function About() {
     return (

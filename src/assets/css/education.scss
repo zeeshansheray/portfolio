@@ -1,0 +1,30 @@
+#Education{
+    height: 100vh;
+
+    .contents{
+        margin-top: 4%;
+    }
+
+    .image{
+background-color: inherit;
+border-radius: 50%;
+    }
+
+      .timelineDot{
+        filter: grayscale(100%);
+       
+    }
+.timelineDot:hover{
+    filter: grayscale(0%);
+    animation-duration: 2s;
+    transform: translateY(-3px);
+
+}
+
+.outerBox:hover{
+    background-color : rgba(100,255,218,0.1);
+    transition-duration: 2s;
+}
+
+    
+}

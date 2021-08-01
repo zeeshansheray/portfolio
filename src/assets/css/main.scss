@@ -94,7 +94,7 @@
     }
 
     .downloadResumeBtn:hover{
-        background-color : rgba(100,255,218,0.1);
+        background-color : rgba(237, 253, 249, 0.1);
         transition-duration: 2s;
     }
 
@@ -159,132 +159,9 @@
         letter-spacing: 1.1px;
     }
 
-    .toggleSwitch{
-        margin-top: 20px;
-        width: 100px;
-        height: 44px;
-        border-radius: 40px;
-        position: relative;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .selectCircle{
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background-color: #20BEEA;
-        position: absolute;
-        z-index: 2;
-        -webkit-transition: .7s;
-        transition: .7s;
-        border: 1px solid black;
-    }
-
-    .detail{
-        margin-top: 20px;
-        font-weight: 800;
-        font-size: 22px;
-    }
-    
-    .questionMark{
-        margin-left: 16px;
-        font-size: 80px;
-    }
-
-    .modeIcon{
-        animation: rotateIcon 4s infinite;
-    }
+   
 
 
-    @keyframes rotateIcon {
-        0%{
-            transform: rotate(45deg);
-        }
-        50%{
-            transform: rotate(-45deg);
-        }
-
-        100%{
-            transform: rotate(45deg);
-        }
-    }
-
-    .darkMode{
-        background-color: white;
-        .selectCircle{
-            margin-left: 56px;
-        }
-
-        .modeIcon{
-            margin-right: 56px;
-        }   
-
-    }
-
-    .lightMode{
-        background-color: black;
-        .selectCircle{
-            margin-right: 56px;
-        }
-
-        .modeIcon{
-            margin-left: 56px;
-        }   
-    }
-
-    .toggleRow{
-        display: flex;
-       justify-content: space-between;
-       flex-direction: row-reverse;
-    }
-
-    .userProfileImg{
-        display: flex;
-        min-width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
-
-    .lottieBox{
-        position: absolute;
-        bottom: 5%;
-        right: 10%;
-    }
-
-    .arrowLottieBoxUp{
-        width: 100px;
-        height: 100px;
-        position: fixed;
-        right: 0%;
-        bottom: 0%;
-    }
-
-    .arrowLottieBoxDown{
-        width: 100px;
-        height: 100px;
-        position: fixed;
-        right: 6%;
-        bottom: 0%;
-        transform: rotate(180deg);
-    }
-}
-
-.ligthTheme{
-    background-color: white;
-}
-
-.darkTheme{
-    background-color: black;
-    
-    .leftText{
-        color: #757575 !important;
-    }
 }
 
 

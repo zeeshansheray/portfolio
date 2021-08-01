@@ -59,6 +59,30 @@ const Homepage = ({className}) => {
         })
     },[])
 
+    const SocialIcons = [
+        {
+            icon : <SvgIcons.FacebookIcon/>,
+            link : 'https://www.facebook.com/zeeshansheray7/',
+        },
+        {
+            icon : <SvgIcons.InstagramIcon/>,
+            link : 'https://www.instagram.com/im_zeeshansheray/',
+        },
+        {
+            icon : <SvgIcons.LinkedInIcon/>,
+            link : 'https://www.linkedin.com/in/zeeshansheray/',
+        },
+        {
+            icon : <SvgIcons.GitHubIcon/>,
+            link : 'https://github.com/zeeshansheray',
+        }
+    ]
+
+
+    const handleSocialLink = (socialLink) => {
+        window.open(socialLink, '_blank');
+    }
+
     return (
         <div id="main" className={darkMode ? 'darkTheme' : 'lightTheme' }>
             <AnimatedCursor
@@ -69,21 +93,6 @@ const Homepage = ({className}) => {
                 innerScale={0.7}
                 outerScale={5}
             />
-            <div className="row toggleRow">
-               <Fade right>
-                <div className={`toggleSwitch ${darkMode ? 'darkMode' : 'lightMode'}`} onClick={handleDarkModeFunc} >
-                        <div className="selectCircle">  
-                        </div>
-                        <span className="modeIcon">
-                        { darkMode ?
-                                <SvgIcons.lightMode/>
-                                :
-                                <SvgIcons.darkMode/>
-                            }
-                        </span>
-                    </div>
-               </Fade>
-            </div>
             <Fade left>
             <div className="introText">
                 <div className="greetText">
@@ -122,23 +131,16 @@ const Homepage = ({className}) => {
             </Fade>
             <Slide bottom>
                     <div className="socialIconsLeft">
-                        <span className="singleIcon">
-                            <SvgIcons.FacebookIcon/>
-                        </span>
-                        <span className="singleIcon">
-                            <SvgIcons.InstagramIcon/>
-                        </span>
-                        <span className="singleIcon">
-                            <SvgIcons.LinkedInIcon/>
-                        </span>
-                        <span className="singleIcon">
-                            <SvgIcons.GitHubIcon/>
-                        </span>
+                        {SocialIcons.map((element,idx)=>
+                          <span className="singleIcon" key={idx} onClick={()=>handleSocialLink(element.link)}>
+                              {element.icon}
+                          </span>
+                        )}
                         <div className="bar">
                         </div>
                     </div>
                     <div className="emailRightSection">
-                        <span className="email">
+                        <span className="email" onClick={()=>handleSocialLink('mailto:zeeshansheray1@gmail.com')}>
                             zeeshansheray1@gmail.com
                         </span>
                         <div className="bar"></div>
