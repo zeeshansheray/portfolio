@@ -35,17 +35,20 @@
     position: relative;
     background-color: #0a192f;
 
-    .Typewriter{
+    .Typewriter, .TypewriterBefore{
         color: #8892b0;
-        font-size: 76px;
+        font-size: 4.5rem;
         font-weight: 600;
         line-height: 72px;
         margin-top: 24px;
         font-family: 'Poppins', sans-serif;
     }
-
     .introText{
         margin-top: 8%;
+    }
+
+    .TypewriterBefore{
+        margin-right: 16px;
     }
 
     .descriptionText{
@@ -55,12 +58,12 @@
         color : #8892b0;
         line-height: 26px;
         font-weight: 400;
-        width: 52%;
+        padding: 0px;
     }
 
     .leftText{
         color: #ccd6f6;
-        font-size: 76px;
+        font-size: 5rem;
         line-height: 88px;
         font-weight: 600;
         display: flex;
@@ -159,10 +162,37 @@
         letter-spacing: 1.1px;
     }
 
-   
+    @media screen and (max-width: 400px) {
 
+        height: 110%;
+
+        .Typewriter, .TypewriterBefore{
+            font-size: 1.8rem;
+            margin-top: 0px;
+            line-height: 40px;
+        }
+
+        .leftText{
+            font-size: 2.75rem;
+            margin-top: 0px;
+            line-height: 70px;
+        }
+
+        .typeWriterTextBox{
+            flex-direction: column;
+        }
+
+        .emailRightSection, .socialIconsLeft{
+           display: none; 
+        }
+
+        .introText{
+            margin-top: 20%;
+        }
+    }
 
 }
+
 
 
 

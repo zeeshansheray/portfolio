@@ -47,10 +47,10 @@ function App() {
             </Fade>
             {showHome && 
             <div className="outerContainer">
-            <Homepage className={showHome ? 'display-none' : ''}/>
-            <About/>
-            <Education/>
-            <Contact/>
+              <Homepage className={showHome ? 'display-none' : ''}/>
+              <About/>
+              <Education/>
+              <Contact/>
              </div>
              }
           </>

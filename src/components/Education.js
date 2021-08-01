@@ -7,6 +7,13 @@ export default function Education() {
 
     const EducationalJourney = [
         {
+            institutionName: 'Isystematic LLC',
+            location       : 'Karachi',
+            study          : 'Software Engineer (Feb-2021)',
+            icon           : '/images/isystematic.png',
+            website        : 'http://www.isystematic.com.pk/',
+        },
+        {
             institutionName: 'COMSATS University',
             location       : 'Islamabad',
             study          : 'Bachelors in Computer Science (2017-2021)',
@@ -32,7 +39,7 @@ export default function Education() {
     return (
         <div id="Education">
             <div className="topHeading text-center">
-                Education
+                Work & Education
             </div>
             <div className="row contents">
                 <CustomTimeline content={EducationalJourney}/>

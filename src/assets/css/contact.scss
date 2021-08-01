@@ -1,10 +1,12 @@
 #Contact{
     height: 100vh;
     width: inherit;
+    position: relative;
 
     .contents{
         margin-top: 4%;
         justify-content: center;
+        position: relative;
     }
 
 
@@ -17,7 +19,6 @@
         line-height: 26px;
         text-align: center;
         font-weight: 400;
-        width: 52%;
     }
 
     .getInTouchBox{
@@ -41,4 +42,40 @@
         background-color : rgba(237, 253, 249, 0.1);
         transition-duration: 2s;
     }
+
+    .greetText{
+        font-family: 'Roboto Mono', monospace;
+        font-size: 14px;
+        color: white !important;
+        line-height: 18px;
+        opacity: 1;
+        position: absolute;
+        bottom: 3%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .date{
+        margin-top: 5px;
+    }
+
+    @media screen and(max-width : 400px) {
+        margin-top: 20%;
+        height: 450px;
+
+        .contents{
+            margin-top: 20%;
+            flex-direction: column;
+        }     
+
+        .description{
+            margin-top: 0px;
+        }
+
+        .getInTouchBox{
+            margin-bottom: 10%;
+            margin-top: 20%;
+        }
+    }
+
 }

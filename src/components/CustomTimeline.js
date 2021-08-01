@@ -14,7 +14,7 @@ import SvgIcons from '../icons/SvgIcons';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    padding        : '6px 16px',
+    padding        : '7px 14px',
     backgroundColor: 'inherit',
     border         : '1px solid #64ffda',
     boxShadow      : 'none',
@@ -74,7 +74,7 @@ export default function CustomTimeline({content}) {
               <TimelineDot className="timelineDot" style={TimelineDotStyle}>
                 <img className="image" src={element.icon} alt="" width="40px" height="40px"/>
               </TimelineDot>
-              {idx !== 2 && <TimelineConnector style={{height: '10vh'}} />}
+              {idx !== 3 && <TimelineConnector style={{height: '8vh'}} />}
             </TimelineSeparator>
             <TimelineContent>
               <Paper elevation={3} className={classes.paper + ' outerBox'}>

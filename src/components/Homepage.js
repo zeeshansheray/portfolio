@@ -13,14 +13,7 @@ import Slide from 'react-reveal/Slide';
 
 import SvgIcons from '../icons/SvgIcons';
 
-const Homepage = ({className}) => {
-
-    const [darkMode, setDarkMode] = useState(false);
-
-    const handleDarkModeFunc = () => {
-        setDarkMode(!darkMode);
-        console.log('Hello')
-    }
+const Homepage = () => {
 
     const lottieRef = React.useRef(null);
     const arrowLottieUpRef = React.useRef(null);
@@ -84,51 +77,51 @@ const Homepage = ({className}) => {
     }
 
     return (
-        <div id="main" className={darkMode ? 'darkTheme' : 'lightTheme' }>
+        <div id="main">
             <AnimatedCursor
                 innerSize={8}
                 outerSize={20}
-                color={!darkMode ? '32, 190, 234' : '255,255,255'}
                 outerAlpha={0.2}
                 innerScale={0.7}
                 outerScale={5}
             />
             <Fade left>
-            <div className="introText">
-                <div className="greetText">
-                    Hi, my name is
+                <div className="introText">
+                    <div className="greetText">
+                        Hi, my name is
+                    </div>
+                    <div className="leftText">
+                        Zeeshan Ali. 
+                    </div>
+                    <div className="d-flex typeWriterTextBox">
+                        <span className="TypewriterBefore">I 'm a</span>
+                        <TypeWriter 
+                            onInit={(typewriter)=>{typewriter.typeString('Software Engineer.').callFunction(()=>{})
+                                .pauseFor(3000)
+                                .deleteAll()
+                                .typeString('Freelancer.')
+                                .pauseFor(3000)
+                                .deleteAll()
+                                .start();        
+                            }}  
+                            options={{
+                                autoStart: true,
+                                loop: true,
+                                delay: 150,
+                            }}
+                        />
+                    </div>
                 </div>
-                        <div className="leftText">
-                            Zeeshan Ali. 
-                        </div>
-                        <div className="d-flex">
-                            <span className="Typewriter">I 'm a&nbsp;</span>
-                            <TypeWriter 
-                                onInit={(typewriter)=>{typewriter.typeString('Software Engineer.').callFunction(()=>{})
-                                    .pauseFor(3000)
-                                    .deleteAll()
-                                    .typeString('Freelancer.')
-                                    .pauseFor(3000)
-                                    .deleteAll()
-                                    .start() ;        
-                                }}  
-                                options={{
-                                    autoStart: true,
-                                    loop: true,
-                                    delay: 150,
-                                }}
-                            />
-                        </div>
-            </div>
-            <div className="descriptionText">
-                I am an ardent software engineer having extensive React JS experience with an eager to learn and master new technologies.
-                <br/>
-                Currently working at this role for <a className="currentComapnyName" target="_blank" href="http://www.isystematic.com.pk/">Isystematic LLC.</a>
-            </div>
-            <div className="resumeDownloadBox">
-                    <a className="downloadResumeBtn" href="/pdf/ZeeshanResume.pdf" download>Download Resume</a>
-            </div>
+                <div className="descriptionText col-md-9 col-sm-12 col-xs-12">
+                    I am an ardent software engineer having extensive React JS experience with an eager to learn and master new technologies.
+                    <br/>  <br/>
+                    Currently working at this role for <a className="currentComapnyName" target="_blank" href="http://www.isystematic.com.pk/">Isystematic LLC.</a>
+                </div>
+                <div className="resumeDownloadBox">
+                        <a className="downloadResumeBtn" href="/pdf/ZeeshanResume.pdf" download>Download Resume</a>
+                </div>
             </Fade>
+
             <Slide bottom>
                     <div className="socialIconsLeft">
                         {SocialIcons.map((element,idx)=>
@@ -145,7 +138,7 @@ const Homepage = ({className}) => {
                         </span>
                         <div className="bar"></div>
                     </div>
-                </Slide>
+            </Slide>
         </div>
     )
 }
