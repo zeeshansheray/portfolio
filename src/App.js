@@ -6,6 +6,7 @@ import Homepage from './components/Homepage';
 import About from './components/About';
 import Education from './components/Education';
 import Contact from './components/Contact';
+import Projects from './components/Projects';
 
 import HashLoader from "react-spinners/HashLoader";
 import Fade from 'react-reveal/Fade';
@@ -50,6 +51,7 @@ function App() {
               <Homepage className={showHome ? 'display-none' : ''}/>
               <About/>
               <Education/>
+              <Projects/>
               <Contact/>
              </div>
              }
