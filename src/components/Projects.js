@@ -6,27 +6,27 @@ export default function Projects() {
 
     const projects = [
         {
+            title : 'Snap That Home web',
+            detail: 'Snap that home is an Australian based property sale/purchase website.',
+            websiteLink: 'https://snapthathome.com.au/',
+            githubLink: '',
+            image: '/images/snapthathome.png',
+            active: false,
+        },
+        {
             title : 'Apex Financial Planning',
             detail: 'Apex Financial Planning was established to help everyday Australians to take control of their retirement planning and savings.',
             websiteLink: 'https://apexfinancialplanning.com.au/',
-            githubLink: '',
+            githubLink: 'https://github.com/zeeshansheray/ApexFinancialPlanning',
             image: '/images/apex.png',
             active: false,
         },
         {
             title : 'Intelligent Tour Companion',
             detail: 'Intelligent tour companion allows you to plan tours across Pakistan. Either automated or manual way.',
-            websiteLink: '',
+            websiteLink: 'https://github.com/zeeshansheray/itourplannerfrontend',
             githubLink: 'https://github.com/zeeshansheray/itourplannerfrontend',
             image: '',
-            active: false,
-        },
-        {
-            title : 'Snap That Home web',
-            detail: 'Snap that home is an Australian based property sale/purchase website.',
-            websiteLink: 'https://snapthathome.com.au/',
-            githubLink: '',
-            image: '/images/snapthathome.png',
             active: false,
         },
         {
@@ -69,7 +69,7 @@ export default function Projects() {
                                         </span>
                                     </div>
                                     <div className="middleContent">
-                                        <div className="title">
+                                        <div className="title" onClick={()=>openUrl(project.websiteLink)}>
                                             {project.title}
                                         </div>
                                         <div className="projectDetails">
@@ -78,9 +78,7 @@ export default function Projects() {
                                         <div className="footerContent" onClick={()=>openUrl(project.githubLink)}>
                                             <SvgIcons.FlipIcon/>
                                         </div>
-
                                     </div>
-
                                 </div>
                             </div>
                         </div>

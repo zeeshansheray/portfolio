@@ -2,6 +2,9 @@ import React from 'react';
 
 import CustomTimeline from './CustomTimeline'; 
 
+import IsystmaticLogo from '../images/isystematic.png';
+import AgaKhanSchoolLogo from '../images/agakhanschool.png';
+import ComsatsLogo from '../images/comsats.png';
 
 export default function Education() {
 
@@ -10,28 +13,28 @@ export default function Education() {
             institutionName: 'Isystematic LLC',
             location       : 'Karachi',
             study          : 'Software Engineer (Feb-2021)',
-            icon           : '/images/isystematic.png',
+            icon           : IsystmaticLogo,
             website        : 'http://www.isystematic.com.pk/',
         },
         {
             institutionName: 'COMSATS University',
             location       : 'Islamabad',
             study          : 'Bachelors in Computer Science (2017-2021)',
-            icon           : '/images/comsats.png',
+            icon           : ComsatsLogo,
             website        : 'https://www.comsats.edu.pk/',
         },
         {
             institutionName: 'Aga Khan Higher Secondary School',
             location       : 'Karachi',
             study          : 'Intermediate in Pre-engineering (2014-2016)',
-            icon           : '/images/agakhanschool.png',
+            icon           :  AgaKhanSchoolLogo,
             website        : 'https://www.agakhanschools.org/pakistan/akhsskar/index',
         },
         {
             institutionName: 'S.M.S Aga Khan School',
             location       : 'Karachi',
             study          : 'Matriculation in Science (2001-2014)',
-            icon           : '/images/agakhanschool.png',
+            icon           :  AgaKhanSchoolLogo,
             website        : 'https://www.agakhanschools.org/Pakistan/SMS/Index',
         },
 ]
