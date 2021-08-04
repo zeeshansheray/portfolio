@@ -60,7 +60,7 @@
         margin-top: 5px;
     }
 
-    @media screen and(max-width : 480px) {
+    @media screen and (min-width: 320px) and (max-width : 768px) {
         margin-top: 20%;
         height: 450px;
 

@@ -51,40 +51,42 @@ export default function Projects() {
 
     return (
         <div id="Projects">
+           <div className="contents">
             <div className="topHeading text-center">
-                Projects
-            </div>
-            <div className="projectContainer">
-                {
-                    myProjects.map((project, idx)=>
-                        <div className={'flip-card col-md-4'}>
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <div className="cardTop">
-                                        <span>
-                                            <SvgIcons.ProjectIcon/>
-                                        </span>
-                                        <span onClick={()=>openUrl(project.websiteLink)}>
-                                            <SvgIcons.LinkIcon/>
-                                        </span>
-                                    </div>
-                                    <div className="middleContent">
-                                        <div className="title" onClick={()=>openUrl(project.websiteLink)}>
-                                            {project.title}
+                    Projects
+                </div>
+                <div className="projectContainer">
+                    {
+                        myProjects.map((project, idx)=>
+                            <div className={'flip-card col-md-4'}>
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <div className="cardTop">
+                                            <span>
+                                                <SvgIcons.ProjectIcon/>
+                                            </span>
+                                            <span onClick={()=>openUrl(project.websiteLink)}>
+                                                <SvgIcons.LinkIcon/>
+                                            </span>
                                         </div>
-                                        <div className="projectDetails">
-                                            {project.detail}
-                                        </div>
-                                        <div className="footerContent" onClick={()=>openUrl(project.githubLink)}>
-                                            <SvgIcons.FlipIcon/>
+                                        <div className="middleContent">
+                                            <div className="title" onClick={()=>openUrl(project.websiteLink)}>
+                                                {project.title}
+                                            </div>
+                                            <div className="projectDetails">
+                                                {project.detail}
+                                            </div>
+                                            {/* <div className="footerContent" onClick={()=>openUrl(project.githubLink)}>
+                                                <SvgIcons.FlipIcon/>
+                                            </div> */}
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    )
-                }
-            </div>
+                        )
+                    }
+                </div>
+           </div>
         </div>
     )
 }
