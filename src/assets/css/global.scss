@@ -65,3 +65,10 @@
 .display-none{
     display: none;
 }
+
+
+@media screen and(max-width : 480px) {
+    .outerContainer{
+        padding: 0px 10%;
+    }
+}
