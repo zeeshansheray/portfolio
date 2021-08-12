@@ -1,5 +1,11 @@
+
 @import './main';
 @import './about.scss';
+@import './education.scss';
+@import './contact.scss';
+@import './projects.scss';
+
+
 
 //global Classes main classes
 
@@ -17,6 +23,7 @@
     font-size: 3rem;
     font-weight: 700;
     padding-top: 16px;
+    line-height: 66px;
     
 }
 
@@ -57,4 +64,11 @@
 
 .display-none{
     display: none;
+}
+
+
+@media screen and(max-width : 480px) {
+    .outerContainer{
+        padding: 0px 10%;
+    }
 }

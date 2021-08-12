@@ -4,6 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import BlankScreen from './components/BlankScreen';
 import Homepage from './components/Homepage';
 import About from './components/About';
+import Education from './components/Education';
+import Contact from './components/Contact';
+import Projects from './components/Projects';
 
 import HashLoader from "react-spinners/HashLoader";
 import Fade from 'react-reveal/Fade';
@@ -45,8 +48,11 @@ function App() {
             </Fade>
             {showHome && 
             <div className="outerContainer">
-            <Homepage className={showHome ? 'display-none' : ''}/>
-            <About/>
+              <Homepage className={showHome ? 'display-none' : ''}/>
+              <About/>
+              <Education/>
+              <Projects/>
+              <Contact/>
              </div>
              }
           </>

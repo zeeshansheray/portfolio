@@ -1,5 +1,6 @@
 import React from 'react'
-import SvgIcons from '../icons/SvgIcons'
+
+import ProfilePicture from '../images/zeeshan.png';
 
 export default function About() {
     return (
@@ -7,8 +8,8 @@ export default function About() {
             <div className="topHeading text-left">
                 About Me
             </div>
-            <div className="row contents">
-                <div className="col-6 aboutMe">
+            <div className="row contents"> 
+                <div className="col-12 col-md-6 aboutMe">
                     Hello! My name is Zeeshan Ali.
                     I am a person who has always had a great passion and determination for areas requiring an
                     analytical approach and logical thinking.<br/><br/>
@@ -30,16 +31,14 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-                <div className="col-6">
+                <div className="col-12 col-md-6">
                     <div className="myPicture">
-                      <img className="image" src="/images/zeeshan.png" width="300px" height="300px" alt=""/>
+                      <img className="image" src={ProfilePicture} width="300px" height="300px" alt=""/>
                       <div className="imageBehindBorder">
-                          
                       </div>
                     </div>
                 </div>
             </div>
-            
         </div>
     )
 }

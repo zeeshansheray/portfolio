@@ -21,10 +21,13 @@
         font-family: 'Bree Serif', serif;
         font-size: 6rem;
         font-weight: 700;
+        color: #0a192f;
     }
 
-    .name{
-        color: #0a192f;
+    @media screen and (min-width: 320px) and (max-width : 768px) {
+        .Title{
+            font-size: 3rem;
+        }
     }
 }
 
@@ -34,17 +37,20 @@
     position: relative;
     background-color: #0a192f;
 
-    .Typewriter{
+    .Typewriter, .TypewriterBefore{
         color: #8892b0;
-        font-size: 76px;
+        font-size: 4.5rem;
         font-weight: 600;
         line-height: 72px;
         margin-top: 24px;
         font-family: 'Poppins', sans-serif;
     }
-
     .introText{
         margin-top: 8%;
+    }
+
+    .TypewriterBefore{
+        margin-right: 16px;
     }
 
     .descriptionText{
@@ -54,12 +60,12 @@
         color : #8892b0;
         line-height: 26px;
         font-weight: 400;
-        width: 52%;
+        padding: 0px;
     }
 
     .leftText{
         color: #ccd6f6;
-        font-size: 76px;
+        font-size: 5rem;
         line-height: 88px;
         font-weight: 600;
         display: flex;
@@ -93,7 +99,7 @@
     }
 
     .downloadResumeBtn:hover{
-        background-color : rgba(100,255,218,0.1);
+        background-color : rgba(237, 253, 249, 0.1);
         transition-duration: 2s;
     }
 
@@ -158,133 +164,81 @@
         letter-spacing: 1.1px;
     }
 
-    .toggleSwitch{
-        margin-top: 20px;
-        width: 100px;
-        height: 44px;
-        border-radius: 40px;
-        position: relative;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
+    @media screen and(max-width : 480px) {
+        height: 110%;
 
-    .selectCircle{
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background-color: #20BEEA;
-        position: absolute;
-        z-index: 2;
-        -webkit-transition: .7s;
-        transition: .7s;
-        border: 1px solid black;
-    }
-
-    .detail{
-        margin-top: 20px;
-        font-weight: 800;
-        font-size: 22px;
-    }
-    
-    .questionMark{
-        margin-left: 16px;
-        font-size: 80px;
-    }
-
-    .modeIcon{
-        animation: rotateIcon 4s infinite;
-    }
-
-
-    @keyframes rotateIcon {
-        0%{
-            transform: rotate(45deg);
-        }
-        50%{
-            transform: rotate(-45deg);
+        .Typewriter, .TypewriterBefore{
+            font-size: 1.8rem;
+            margin-top: 0px;
+            line-height: 40px;
         }
 
-        100%{
-            transform: rotate(45deg);
+        .leftText{
+            font-size: 2.75rem;
+            margin-top: 0px;
+            line-height: 70px;
+        }
+
+        .typeWriterTextBox{
+            flex-direction: column;
+        }
+
+        .emailRightSection, .socialIconsLeft{
+           display: none; 
+        }
+
+        .introText{
+            margin-top: 10%;
         }
     }
 
-    .darkMode{
-        background-color: white;
-        .selectCircle{
-            margin-left: 56px;
+    @media screen and (min-width: 481px) and (max-width : 768px) {
+        height: 100%;
+
+        .leftText{
+            font-size: 2.8rem;
+            margin-top: 0px;
+            line-height: 70px;
         }
 
-        .modeIcon{
-            margin-right: 56px;
-        }   
-
-    }
-
-    .lightMode{
-        background-color: black;
-        .selectCircle{
-            margin-right: 56px;
+        .Typewriter, .TypewriterBefore{
+            font-size: 2.45rem;
+            margin-top: 0px;
+            line-height: 40px;
         }
 
-        .modeIcon{
-            margin-left: 56px;
-        }   
+        .typeWriterTextBox{
+            flex-direction: column;
+        }
+
+        .emailRightSection, .socialIconsLeft{
+            display: none; 
+         }
+
+
+        .introText{
+            margin-top: 10%;
+        }
     }
 
-    .toggleRow{
-        display: flex;
-       justify-content: space-between;
-       flex-direction: row-reverse;
-    }
+    @media screen and (min-width: 769px) and (max-width : 1024px) {
+        height: 80vh;
 
-    .userProfileImg{
-        display: flex;
-        min-width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
+        .Typewriter, .TypewriterBefore{
+            font-size: 2.7rem;
+            margin-top: 0px;
+            line-height: 40px;
+        }
 
-    .lottieBox{
-        position: absolute;
-        bottom: 5%;
-        right: 10%;
-    }
+        .leftText{
+            font-size: 3rem;
+            margin-top: 0px;
+            line-height: 70px;
+        }
 
-    .arrowLottieBoxUp{
-        width: 100px;
-        height: 100px;
-        position: fixed;
-        right: 0%;
-        bottom: 0%;
-    }
-
-    .arrowLottieBoxDown{
-        width: 100px;
-        height: 100px;
-        position: fixed;
-        right: 6%;
-        bottom: 0%;
-        transform: rotate(180deg);
     }
 }
 
-.ligthTheme{
-    background-color: white;
-}
-
-.darkTheme{
-    background-color: black;
-    
-    .leftText{
-        color: #757575 !important;
-    }
-}
 
 
 
