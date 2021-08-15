@@ -2,9 +2,19 @@ import React from 'react'
 
 import ProfilePicture from '../images/zeeshan.png';
 
+import Fade from 'react-reveal/Fade';
+
 export default function About() {
+
+    const [show, setShow] = React.useState(false);
+
+    React.useEffect(()=>{
+        setShow(true);
+    },[])
+
     return (
         <div id="About">
+        <Fade when={show} duration={1500} delay={500} left>
             <div className="topHeading text-left">
                 About Me
             </div>
@@ -39,6 +49,7 @@ export default function About() {
                     </div>
                 </div>
             </div>
+            </Fade>
         </div>
     )
 }

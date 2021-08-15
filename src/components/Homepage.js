@@ -7,7 +7,6 @@ import TypeWriter from 'typewriter-effect';
 import Lottie from 'lottie-web';
 import AnimatedCursor from "react-animated-cursor"
 
-import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
 
@@ -85,7 +84,7 @@ const Homepage = () => {
                 innerScale={0.7}
                 outerScale={5}
             />
-            <Fade left>
+            <Fade bottom duration={1500} delay={500}>
                 <div className="introText">
                     <div className="greetText">
                         Hi, my name is

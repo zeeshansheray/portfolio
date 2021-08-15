@@ -2,7 +2,11 @@ import React from 'react'
 
 import SvgIcons from '../icons/SvgIcons';
 
+import Fade from 'react-reveal/Fade';
+
 export default function Projects() {
+
+    const [delay, setDelay] = React.useState(500);
 
     const projects = [
         {
@@ -58,6 +62,7 @@ export default function Projects() {
                 <div className="projectContainer">
                     {
                         myProjects.map((project, idx)=>
+                        <Fade left delay={(idx+1)*500}>
                             <div className={'flip-card col-md-4'}>
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
@@ -76,13 +81,12 @@ export default function Projects() {
                                             <div className="projectDetails">
                                                 {project.detail}
                                             </div>
-                                            {/* <div className="footerContent" onClick={()=>openUrl(project.githubLink)}>
-                                                <SvgIcons.FlipIcon/>
-                                            </div> */}
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </Fade>
+
                         )
                     }
                 </div>
