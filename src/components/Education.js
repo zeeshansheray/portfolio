@@ -2,11 +2,21 @@ import React from 'react';
 
 import CustomTimeline from './CustomTimeline'; 
 
+import Fade from 'react-reveal/Fade';
+
+
 import IsystmaticLogo from '../images/isystematic.png';
 import AgaKhanSchoolLogo from '../images/agakhanschool.png';
 import ComsatsLogo from '../images/comsats.png';
 
 export default function Education() {
+
+    
+    const [show, setShow] = React.useState(false);
+
+    React.useEffect(()=>{
+        setShow(true);
+    },[])
 
     const EducationalJourney = [
         {
@@ -41,12 +51,14 @@ export default function Education() {
 
     return (
         <div id="Education">
-            <div className="topHeading text-center">
-                Work & Education
-            </div>
-            <div className="row contents">
-                <CustomTimeline content={EducationalJourney}/>
-            </div>
+            <Fade right show={show} duration={1500} delay={500}>
+                <div className="topHeading text-center">
+                    Work & Education
+                </div>
+                <div className="row contents">
+                    <CustomTimeline content={EducationalJourney}/>
+                </div>
+            </Fade>
         </div>
     )
 }
