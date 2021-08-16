@@ -5,22 +5,22 @@ import SvgIcons from '../icons/SvgIcons';
 export default function Projects() {
 
     const projects = [
-        {
-            title : 'Snap That Home web',
-            detail: 'Snap that home is an Australian based property sale/purchase website.',
-            websiteLink: 'https://snapthathome.com.au/',
-            githubLink: '',
-            image: '/images/snapthathome.png',
-            active: false,
-        },
-        {
-            title : 'Apex Financial Planning',
-            detail: 'Apex Financial Planning was established to help everyday Australians to take control of their retirement planning and savings.',
-            websiteLink: 'https://apexfinancialplanning.com.au/',
-            githubLink: 'https://github.com/zeeshansheray/ApexFinancialPlanning',
-            image: '/images/apex.png',
-            active: false,
-        },
+        // {
+        //     title : 'Snap That Home Landing',
+        //     detail: 'Snap that home is an Australian based property sale/purchase website.',
+        //     websiteLink: 'https://snapthathome.com.au/',
+        //     githubLink: '',
+        //     image: '/images/snapthathome.png',
+        //     active: false,
+        // },
+        // {
+        //     title : 'Apex Financial Planning',
+        //     detail: 'Apex Financial Planning was established to help everyday Australians to take control of their retirement planning and savings.',
+        //     websiteLink: 'https://apexfinancialplanning.com.au/',
+        //     githubLink: 'https://github.com/zeeshansheray/ApexFinancialPlanning',
+        //     image: '/images/apex.png',
+        //     active: false,
+        // },
         {
             title : 'Intelligent Tour Companion',
             detail: 'Intelligent tour companion allows you to plan tours across Pakistan. Either automated or manual way.',
@@ -30,7 +30,7 @@ export default function Projects() {
             active: false,
         },
         {
-            title : 'Beasty web',
+            title : 'Beasty Landing',
             detail: 'Beasty is a white-label product that allows users to redeem coupons from Walletly website.',
             websiteLink: 'https://www.beasty.app/',
             githubLink: '',
