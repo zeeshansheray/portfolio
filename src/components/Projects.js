@@ -18,6 +18,14 @@ export default function Projects() {
             active: false,
         },
         {
+            title : 'Future Money Club',
+            detail: 'Future money is an Australian based loyalty program website.',
+            websiteLink: 'https://futuremoneyclub.com.au/',
+            githubLink: '',
+            image: '/images/snapthathome.png',
+            active: false,   
+        },
+        {
             title : 'Apex Financial Planning',
             detail: 'Apex Financial Planning was established to help everyday Australians to take control of their retirement planning and savings.',
             websiteLink: 'https://apexfinancialplanning.com.au/',
@@ -34,7 +42,7 @@ export default function Projects() {
             active: false,
         },
         {
-            title : 'Beasty web',
+            title : 'Beasty Webstie Landing page',
             detail: 'Beasty is a white-label product that allows users to redeem coupons from Walletly website.',
             websiteLink: 'https://www.beasty.app/',
             githubLink: '',
@@ -86,7 +94,6 @@ export default function Projects() {
                                 </div>
                             </div>
                         </Fade>
-
                         )
                     }
                 </div>
