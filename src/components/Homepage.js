@@ -11,6 +11,7 @@ import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
 
 import SvgIcons from '../icons/SvgIcons';
+import Resume from '../pdf/ZeeshanResume.pdf';
 
 const Homepage = () => {
 
@@ -117,7 +118,7 @@ const Homepage = () => {
                     Currently working at this role for <a className="currentComapnyName" target="_blank" href="http://www.isystematic.com.pk/">Isystematic LLC.</a>
                 </div>
                 <div className="resumeDownloadBox">
-                        <a className="downloadResumeBtn" href="/pdf/ZeeshanResume.pdf" download>Download Resume</a>
+                        <a className="downloadResumeBtn" href={Resume} download>Download Resume</a>
                 </div>
             </Fade>
 
