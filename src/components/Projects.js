@@ -9,14 +9,14 @@ export default function Projects() {
     const [delay, setDelay] = React.useState(500);
 
     const projects = [
-        // {
-        //     title : 'Snap That Home Landing',
-        //     detail: 'Snap that home is an Australian based property sale/purchase website.',
-        //     websiteLink: 'https://snapthathome.com.au/',
-        //     githubLink: '',
-        //     image: '/images/snapthathome.png',
-        //     active: false,
-        // },
+        {
+            title : 'Snap That Home',
+            detail: 'Snap that home is an Australian based property sale/purchase website.',
+            websiteLink: 'https://snapthathome.com.au/',
+            githubLink: '',
+            image: '/images/snapthathome.png',
+            active: false,
+        },
         {
             title : 'Future Money Club',
             detail: 'Future money is an Australian based loyalty program website.',
