@@ -17,14 +17,14 @@ export default function Projects() {
         //     image: '/images/snapthathome.png',
         //     active: false,
         // },
-        // {
-        //     title : 'Apex Financial Planning',
-        //     detail: 'Apex Financial Planning was established to help everyday Australians to take control of their retirement planning and savings.',
-        //     websiteLink: 'https://apexfinancialplanning.com.au/',
-        //     githubLink: 'https://github.com/zeeshansheray/ApexFinancialPlanning',
-        //     image: '/images/apex.png',
-        //     active: false,
-        // },
+        {
+            title : 'Apex Financial Planning',
+            detail: 'Apex Financial Planning was established to help everyday Australians to take control of their retirement planning and savings.',
+            websiteLink: 'https://apexfinancialplanning.com.au/',
+            githubLink: 'https://github.com/zeeshansheray/ApexFinancialPlanning',
+            image: '/images/apex.png',
+            active: false,
+        },
         {
             title : 'Intelligent Tour Companion',
             detail: 'Intelligent tour companion allows you to plan tours across Pakistan. Either automated or manual way.',
