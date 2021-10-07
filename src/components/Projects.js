@@ -42,7 +42,7 @@ export default function Projects() {
             active: false,
         },
         {
-            title : 'Beasty Webstie Landing page',
+            title : 'Beasty Webstie',
             detail: 'Beasty is a white-label product that allows users to redeem coupons from Walletly website.',
             websiteLink: 'https://www.beasty.app/',
             githubLink: '',
