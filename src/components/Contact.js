@@ -5,6 +5,7 @@ import Zoom from 'react-reveal/Zoom';
 export default function Contact() {
 
     const date = new Date();
+    var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct", "Nov", "Dec"];
 
     const [show, setShow] = React.useState(false);
 
@@ -27,9 +28,9 @@ export default function Contact() {
                         <a target="_blank" href="mailto:zeeshansheray1@gmail.com" className="getInTouchButton">Say Hello!</a>
                 </div>
                 <div className="greetText text-center">
-                    Zeeshan Sheray®
+                    Zeeshan Ali®
                     <div className="date">
-                    {date.toLocaleDateString('en-US')}
+                    {date.getDate() + '-' + month[date.getMonth()] + ',' + date.getFullYear()}
                     </div>
                 </div>
                 </Zoom>
