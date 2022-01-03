@@ -26,20 +26,20 @@ export default function Projects() {
             active: false,   
         },
         {
-            title : 'Future Money Club',
-            detail: 'Future money is an Australian based loyalty program website.',
-            websiteLink: 'https://futuremoneyclub.com.au/',
-            githubLink: '',
-            image: '/images/snapthathome.png',
-            active: false,   
-        },
-        {
             title : 'Snap That Home',
             detail: 'Snap that home is an Australian based property sale/purchase website.',
             websiteLink: 'https://snapthathome.com.au/',
             githubLink: '',
             image: '/images/snapthathome.png',
             active: false,
+        },
+        {
+            title : 'Future Money Club',
+            detail: 'Future money is an Australian based loyalty program website.',
+            websiteLink: 'https://futuremoneyclub.com.au/',
+            githubLink: '',
+            image: '/images/snapthathome.png',
+            active: false,   
         },
         {
             title : 'Intelligent Tour Companion',
@@ -57,14 +57,14 @@ export default function Projects() {
             image: '/images/beasty.png',
             active: false,
         },
-        {
-            title : 'Apex Financial Planning',
-            detail: 'Apex Financial Planning was established to help everyday Australians to take control of their retirement planning and savings.',
-            websiteLink: 'https://apexfinancialplanning.com.au/',
-            githubLink: 'https://github.com/zeeshansheray/ApexFinancialPlanning',
-            image: '/images/apex.png',
-            active: false,
-        },
+        // {
+        //     title : 'Apex Financial Planning',
+        //     detail: 'Apex Financial Planning was established to help everyday Australians to take control of their retirement planning and savings.',
+        //     websiteLink: 'https://apexfinancialplanning.com.au/',
+        //     githubLink: 'https://github.com/zeeshansheray/ApexFinancialPlanning',
+        //     image: '/images/apex.png',
+        //     active: false,
+        // },
     ]
 
     const [myProjects, setMyProjects] = React.useState([]);
