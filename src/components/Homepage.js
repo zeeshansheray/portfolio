@@ -2,7 +2,7 @@
 import React, {useState, useEffect} from 'react'
 
 import TypeWriter from 'typewriter-effect';
-
+import Particle from './Particle';
 
 import Lottie from 'lottie-web';
 import AnimatedCursor from "react-animated-cursor"
@@ -85,6 +85,7 @@ const Homepage = () => {
                 innerScale={0.7}
                 outerScale={5}
             />
+            <Particle/>
             <Fade bottom duration={1500} delay={500}>
                 <div className="introText">
                     <div className="greetText">
