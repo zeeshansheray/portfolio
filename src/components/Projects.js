@@ -4,6 +4,12 @@ import SvgIcons from '../icons/SvgIcons';
 
 import Fade from 'react-reveal/Fade';
 
+import WalletlyImg from '../images/walletly.png'
+import SnapThatHomeImg from '../images/snapthathome.png'
+import BeastyImg from '../images/beasty.png'
+import MintiImg from '../images/minti.png'
+
+
 export default function Projects() {
 
     const [delay, setDelay] = React.useState(500);
@@ -11,52 +17,45 @@ export default function Projects() {
     const projects = [
         {
             title : 'Walletly',
-            detail: 'Wallelty is a SAAS, that offer Reward platform to Marketing Agencies and Business. Currently we are working on Version 2.0, which will be released shortly.',
+            detail: 'Loyalty program offering platform.',
             websiteLink: 'https://walletly.ai/old_version/',
             githubLink: '',
-            image: '/images/snapthathome.png',
+            image: WalletlyImg,
             active: false,   
         },
         {
-            title : 'Vertex Wealth ',
-            detail: 'Vertex is a wealth management websities that helps you make better financial decisions. ',
-            websiteLink: 'https://vertexm.com.au/',
+            title : 'Minti',
+            detail: 'Minti is a job finding portal.',
+            websiteLink: 'https://minti.ai/',
             githubLink: '',
-            image: '/images/snapthathome.png',
+            image: MintiImg,
             active: false,   
         },
         {
             title : 'Snap That Home',
-            detail: 'Snap that home is an Australian based property sale/purchase website.',
+            detail: 'A property sale/purchase website.',
             websiteLink: 'https://snapthathome.com.au/',
             githubLink: '',
-            image: '/images/snapthathome.png',
-            active: false,
-        },
-        {
-            title : 'Future Money Club',
-            detail: 'Future money is an Australian based loyalty program website.',
-            websiteLink: 'https://futuremoneyclub.com.au/',
-            githubLink: '',
-            image: '/images/snapthathome.png',
-            active: false,   
-        },
-        {
-            title : 'Intelligent Tour Companion',
-            detail: 'Intelligent tour companion allows you to plan tours across Pakistan. Either automated or manual way.',
-            websiteLink: 'https://github.com/zeeshansheray/itourplannerfrontend',
-            githubLink: 'https://github.com/zeeshansheray/itourplannerfrontend',
-            image: '',
+            image: SnapThatHomeImg,
             active: false,
         },
         {
             title : 'Beasty Webstie',
-            detail: 'Beasty is a white-label product that allows users to redeem coupons from Walletly website.',
+            detail: 'Coupon redeem website',
             websiteLink: 'https://www.beasty.app/',
             githubLink: '',
-            image: '/images/beasty.png',
+            image: BeastyImg,
             active: false,
         },
+        // {
+        //     title : 'Intelligent Tour Companion',
+        //     detail: 'Tour Planner (Final Year Project)',
+        //     websiteLink: 'https://github.com/zeeshansheray/itourplannerfrontend',
+        //     githubLink: 'https://github.com/zeeshansheray/itourplannerfrontend',
+        //     image: '',
+        //     active: false,
+        // },
+        
         // {
         //     title : 'Apex Financial Planning',
         //     detail: 'Apex Financial Planning was established to help everyday Australians to take control of their retirement planning and savings.',
@@ -104,6 +103,10 @@ export default function Projects() {
                                             </div>
                                             <div className="projectDetails">
                                                 {project.detail}
+                                            </div>  
+                                            <div className="imgBox">
+                                            <div class="p-browser"><div class="p-circle"></div><div class="p-circle"></div><div class="p-circle"></div></div>
+                                                <img className="projectImg" src={project.image} width="100%" height={"100%"} alt=""/>
                                             </div>
                                         </div>
                                     </div>
