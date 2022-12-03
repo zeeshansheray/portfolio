@@ -12,8 +12,6 @@ import MintiImg from '../images/minti.png'
 
 export default function Projects() {
 
-    const [delay, setDelay] = React.useState(500);
-
     const projects = [
         {
             title : 'Walletly',

@@ -14,6 +14,7 @@ import HashLoader from "react-spinners/HashLoader";
 import Fade from 'react-reveal/Fade';
 
 import './assets/css/global.scss';
+import Skills from './components/Skills';
 
 function App() {
 
@@ -54,6 +55,7 @@ function App() {
               <Homepage className={showHome ? 'display-none' : ''}/>
               <About/>
               <Education/>
+              <Skills/>
               <Projects/>
               <Contact/>
              </div>
