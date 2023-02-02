@@ -49,6 +49,20 @@ export default function About() {
                     </div>
                 </div>
             </div>
+
+            <div itemscope itemtype='http://schema.org/Person' class='fiverr-seller-widget' style={{display: 'inline-block'}}>
+                <a itemprop='url' href="https://www.fiverr.com/zeeshansheray7" rel="nofollow" target="_blank" style={{display: 'inline-block'}}>
+                    <div class='fiverr-seller-content' id='fiverr-seller-widget-content-2f700be4-ff02-46cf-9d63-94213745c6a0' itemprop='contentURL' style={{display: 'none'}}></div>
+                    <div id='fiverr-widget-seller-data' style={{display: 'none'}}>
+                        <div itemprop='name' >zeeshansheray7</div>
+                        <div itemscope itemtype='http://schema.org/Organization'><span itemprop='name'>Fiverr</span></div>
+                        <div itemprop='jobtitle'>Seller</div>
+                        <div itemprop='description'>I'm a full-time software engineer with a passion for coding and problem-solving. When I'm not working on complex software projects, I love to keep my skills sharp and stay up-to-date with the latest technologies. In my free time, I enjoy playing video games, reading about the latest advancements in technology, and working on personal programming projects. I also have a background in graphic design, which allows me to bring a creative touch to my software projects and ensure they not only function well but also look great. Let's create something amazing together!</div>
+                    </div>
+                </a>
+            </div>
+
+
             </Fade>
         </div>
     )
