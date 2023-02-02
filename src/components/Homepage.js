@@ -54,12 +54,17 @@ const Homepage = () => {
 
     const SocialIcons = [
         {
-            icon : <SvgIcons.FacebookIcon/>,
-            link : 'https://www.facebook.com/zeeshansheray7/',
+            icon : <SvgIcons.FiverrIcon/>,
+            link : 'https://www.fiverr.com/zeeshansheray7',
         },
+        
         {
             icon : <SvgIcons.InstagramIcon/>,
             link : 'https://www.instagram.com/im_zeeshansheray/',
+        },
+        {
+            icon : <SvgIcons.FacebookIcon/>,
+            link : 'https://www.facebook.com/zeeshansheray7/',
         },
         {
             icon : <SvgIcons.LinkedInIcon/>,

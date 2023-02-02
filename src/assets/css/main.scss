@@ -118,6 +118,11 @@
     }
 
     .singleIcon:hover svg{
+        #fiverrIcon{
+        fill: #64ffda;
+
+        }
+
         color: #64ffda;
         transform: translateY(-3px);
         transition-duration: 0.3s;
