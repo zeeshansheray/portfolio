@@ -8,11 +8,30 @@ import WalletlyImg from '../images/walletly.png'
 import SnapThatHomeImg from '../images/snapthathome.png'
 import BeastyImg from '../images/beasty.png'
 import MintiImg from '../images/minti.png'
+import WainoImg from '../images/waino.png'
+import RealestateIntegrate from '../images/realestateintegrate.png'
+
 
 
 export default function Projects() {
 
     const projects = [
+        {
+            title : 'Waino',
+            detail: 'Discover the best wines.',
+            websiteLink: 'https://www.waino.io/',
+            githubLink: '',
+            image: WainoImg,
+            active: false,   
+        },
+        {
+            title : 'RealEstateIntegrate',
+            detail: 'Accelerate your real estate business with customizable solutions.',
+            websiteLink: 'https://realestateintegrate.com/',
+            githubLink: '',
+            image: WalletlyImg,
+            active: false,   
+        },
         {
             title : 'Walletly',
             detail: 'Loyalty program offering platform.',
