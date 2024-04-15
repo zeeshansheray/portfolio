@@ -9,7 +9,7 @@ import SnapThatHomeImg from '../images/snapthathome.png'
 import BeastyImg from '../images/beasty.png'
 import MintiImg from '../images/minti.png'
 import WainoImg from '../images/waino.png'
-import RealestateIntegrate from '../images/realestateintegrate.png'
+import RealestateIntegrateImg from '../images/realestateintegrate.png'
 
 
 
@@ -29,7 +29,7 @@ export default function Projects() {
             detail: 'Accelerate your real estate business with customizable solutions.',
             websiteLink: 'https://realestateintegrate.com/',
             githubLink: '',
-            image: WalletlyImg,
+            image: RealestateIntegrateImg,
             active: false,   
         },
         {
@@ -64,23 +64,6 @@ export default function Projects() {
             image: BeastyImg,
             active: false,
         },
-        // {
-        //     title : 'Intelligent Tour Companion',
-        //     detail: 'Tour Planner (Final Year Project)',
-        //     websiteLink: 'https://github.com/zeeshansheray/itourplannerfrontend',
-        //     githubLink: 'https://github.com/zeeshansheray/itourplannerfrontend',
-        //     image: '',
-        //     active: false,
-        // },
-        
-        // {
-        //     title : 'Apex Financial Planning',
-        //     detail: 'Apex Financial Planning was established to help everyday Australians to take control of their retirement planning and savings.',
-        //     websiteLink: 'https://apexfinancialplanning.com.au/',
-        //     githubLink: 'https://github.com/zeeshansheray/ApexFinancialPlanning',
-        //     image: '/images/apex.png',
-        //     active: false,
-        // },
     ]
 
     const [myProjects, setMyProjects] = React.useState([]);
