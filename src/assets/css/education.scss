@@ -1,0 +1,46 @@
+#Education{
+    min-height: 100vh;
+
+    .contents{
+        margin-top: 4%;
+    }
+
+    .image{
+        background-color: inherit;
+        border-radius: 50%;
+    }
+
+    .timelineDot{
+        filter: grayscale(100%);
+       
+    }
+    .timelineDot:hover{
+        filter: grayscale(0%);
+        animation-duration: 2s;
+        transform: translateY(-3px);
+}
+
+    .outerBox:hover{
+        background-color : rgba(100,255,218,0.1);
+        transition-duration: 2s;
+    }
+
+    
+    @media screen and (min-width: 320px) and (max-width : 768px) {
+        margin-top: 20%;
+        height: 100%;
+
+        .contents{
+            margin-top: 20%;
+            flex-direction: column;
+        }     
+
+    }
+
+    @media screen and (min-width: 769px) and (max-width : 1024px) {
+        height: 100%;
+        margin-top: 20%;
+    }
+
+
+}
