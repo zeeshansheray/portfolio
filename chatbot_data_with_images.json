@@ -1,0 +1,125 @@
+{
+    "mensaje": "¡Esperamos que disfrutes cocinando y saboreando este delicioso arroz seco de carne! 🥘 No olvides compartir tus creaciones culinarias con amigos y familiares. ¡Buen provecho! 🍴",
+    "productos": [
+        {
+            "nombre": "SOS Arroz redondo",
+            "cantidad": 1000,
+            "unidad_de_cantidad": "g",
+            "precio_total": 1.84,
+            "precio_relativo": 1.84,
+            "unidad_de_precio_relativo": "Kg",
+            "cantidad_a_carrito": 1,
+            "imagenes": [
+                "https://www.compraonline.alcampo.es/images-v3/37ea0506-72ec-4543-93c8-a77bb916ec12/ec7b63eb-5180-45ed-b3b2-0123ab9fd4a5/500x500.jpg"
+            ]
+        },
+        {
+            "nombre": "Estofado de cerdo, ideal para guisos",
+            "cantidad": 600,
+            "unidad_de_cantidad": "g",
+            "precio_total": 4.79,
+            "precio_relativo": 7.98,
+            "unidad_de_precio_relativo": "Kg",
+            "cantidad_a_carrito": 1,
+            "imagenes": [
+                "https://www.compraonline.alcampo.es/images-v3/37ea0506-72ec-4543-93c8-a77bb916ec12/ec7b63eb-5180-45ed-b3b2-0123ab9fd4a5/500x500.jpg"
+            ]
+        },
+        {
+            "nombre": "Caldo de carne sin gluten y sin grasa",
+            "cantidad": 1000,
+            "unidad_de_cantidad": "ml",
+            "precio_total": 0.71,
+            "precio_relativo": 0.71,
+            "unidad_de_precio_relativo": "Litro",
+            "cantidad_a_carrito": 1,
+            "imagenes": [
+                "https://www.compraonline.alcampo.es/images-v3/37ea0506-72ec-4543-93c8-a77bb916ec12/ec7b63eb-5180-45ed-b3b2-0123ab9fd4a5/500x500.jpg"
+            ]
+        },
+        {
+            "nombre": "Pimientos rojos",
+            "cantidad": 750,
+            "unidad_de_cantidad": "g",
+            "precio_total": 1.99,
+            "precio_relativo": 2.65,
+            "unidad_de_precio_relativo": "Kg",
+            "cantidad_a_carrito": 1,
+            "imagenes": [
+                "https://www.compraonline.alcampo.es/images-v3/37ea0506-72ec-4543-93c8-a77bb916ec12/ec7b63eb-5180-45ed-b3b2-0123ab9fd4a5/500x500.jpg"
+            ]
+        },
+        {
+            "nombre": "Pimientos verdes",
+            "cantidad": 600,
+            "unidad_de_cantidad": "g",
+            "precio_total": 2.64,
+            "precio_relativo": 4.4,
+            "unidad_de_precio_relativo": "Kg",
+            "cantidad_a_carrito": 1,
+            "imagenes": [
+                "https://www.compraonline.alcampo.es/images-v3/37ea0506-72ec-4543-93c8-a77bb916ec12/ec7b63eb-5180-45ed-b3b2-0123ab9fd4a5/500x500.jpg"
+            ]
+        },
+        {
+            "nombre": "Tomate triturado",
+            "cantidad": 800,
+            "unidad_de_cantidad": "g",
+            "precio_total": 0.98,
+            "precio_relativo": 1.23,
+            "unidad_de_precio_relativo": "Kg",
+            "cantidad_a_carrito": 1,
+            "imagenes": [
+                "https://www.compraonline.alcampo.es/images-v3/37ea0506-72ec-4543-93c8-a77bb916ec12/ec7b63eb-5180-45ed-b3b2-0123ab9fd4a5/500x500.jpg"
+            ]
+        },
+        {
+            "nombre": "Ajos",
+            "cantidad": 500,
+            "unidad_de_cantidad": "g",
+            "precio_total": 2.98,
+            "precio_relativo": 5.96,
+            "unidad_de_precio_relativo": "Kg",
+            "cantidad_a_carrito": 1,
+            "imagenes": [
+                "https://www.compraonline.alcampo.es/images-v3/37ea0506-72ec-4543-93c8-a77bb916ec12/ec7b63eb-5180-45ed-b3b2-0123ab9fd4a5/500x500.jpg"
+            ]
+        },
+        {
+            "nombre": "Aceite de oliva virgen extra",
+            "cantidad": 1000,
+            "unidad_de_cantidad": "ml",
+            "precio_total": 10.67,
+            "precio_relativo": 10.67,
+            "unidad_de_precio_relativo": "Litro",
+            "cantidad_a_carrito": 1,
+            "imagenes": [
+                "https://www.compraonline.alcampo.es/images-v3/37ea0506-72ec-4543-93c8-a77bb916ec12/ec7b63eb-5180-45ed-b3b2-0123ab9fd4a5/500x500.jpg"
+            ]
+        },
+        {
+            "nombre": "Sal refinada marina",
+            "cantidad": 1000,
+            "unidad_de_cantidad": "g",
+            "precio_total": 0.47,
+            "precio_relativo": 0.47,
+            "unidad_de_precio_relativo": "Kg",
+            "cantidad_a_carrito": 1,
+            "imagenes": [
+                "https://www.compraonline.alcampo.es/images-v3/37ea0506-72ec-4543-93c8-a77bb916ec12/ec7b63eb-5180-45ed-b3b2-0123ab9fd4a5/500x500.jpg"
+            ]
+        },
+        {
+            "nombre": "Pimienta negra molida",
+            "cantidad": 100,
+            "unidad_de_cantidad": "g",
+            "precio_total": 0.72,
+            "precio_relativo": null,
+            "unidad_de_precio_relativo": null,
+            "cantidad_a_carrito": 1,
+            "imagenes": [
+                "https://www.compraonline.alcampo.es/images-v3/37ea0506-72ec-4543-93c8-a77bb916ec12/ec7b63eb-5180-45ed-b3b2-0123ab9fd4a5/500x500.jpg"
+            ]
+        }
+    ]
+}
